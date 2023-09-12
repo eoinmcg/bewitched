@@ -1,0 +1,28 @@
+{
+  "name": "Witch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "esbuild --bundle src/game/index.js --outfile=public/game.js --servedir=public --sourcemap --serve=8013",
+    "dev": "npm run start",
+    "build": "esbuild src/game/index.js --bundle --outfile=public/game.js",
+    "brokenbuild": "esbuild src/index.js --bundle --minify --outfile=public/game.js",
+    "zip": "npm run build && node ./scripts/zip.js",
+    "imgs": "node ./scripts/encodeImages.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "decompress": "^4.2.1",
+    "esbuild": "^0.19.2",
+    "node-zip": "^1.1.1"
+  },
+  "dependencies": {
+    "roadroller": "^2.1.0",
+    "uglify-js": "^3.17.4",
+    "unzip": "^0.1.11"
+  }
+}

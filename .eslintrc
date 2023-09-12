@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "strict": 0,
+      "quotes": [
+        1,
+      "single"
+      ]
+  },
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+}
+
