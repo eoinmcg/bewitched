@@ -593,7 +593,7 @@
     }
     update(dt) {
       if (this.g.input.click) {
-        this.g.changeState("Gameover");
+        this.g.changeState("Title");
       }
     }
     render() {
@@ -621,7 +621,7 @@
     init() {
       this.setThunder();
       this.g.addEvent({
-        t: 150,
+        t: 75,
         cb: () => {
           this.canSwitch = true;
         }
@@ -694,7 +694,7 @@
       l: 6,
       data: [
         "B-100-280",
-        "L-110-50-100",
+        "L-0-50-320",
         "L-0-200-30",
         "L-290-200-30",
         "L-140-350-50-0-0-0-7"
@@ -1049,11 +1049,11 @@
       this.o = 0;
     }
     init() {
-      this.g.sfxPlay("gameover");
       this.g.addEvent({
         t: 100,
         cb: () => {
           this.canSwitch = true;
+          this.g.sfxPlay("gameover");
         }
       });
     }
@@ -1846,6 +1846,11 @@
         if (Math.random() > 0.99)
           this.flip.x = !this.flip.x;
       }
+    }
+    render() {
+      if (this.owner && this.owner.hide)
+        return;
+      super.render();
     }
   };
 

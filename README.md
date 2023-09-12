@@ -19,8 +19,8 @@ Can you, a lowly apprentice, rescue them?
 
 ## Controls
 
-** Desktop: ** Hold left arrow to fly left and right arrow to fly right
-** Mobile: ** Hold left to fly left and hold right to fly right
+**Desktop:** Hold left arrow to fly left and right arrow to fly right
+**Mobile:** Hold left to fly left and hold right to fly right
 
 ## Notes
 
@@ -28,9 +28,12 @@ For mobile, works well on iOS and Firefox Android.
 
 ## Running Locally
 cd into dir and type
-  npm install
+
+    npm install
+
 then
-  npm start
+
+    npm start
 
 The game will now be playable at localhost:8013
 
