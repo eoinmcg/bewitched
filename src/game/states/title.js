@@ -2,7 +2,7 @@ export default class Title {
 
   constructor(g) {
     this.g = g;
-    this.bat = this.g.spawn('Bat', {p: this, x: 100, y: 440, s: 2  });
+    this.bat = this.g.spawn('Bat', {p: this, x: 100, y: 445, s: 2  });
     this.bat = this.g.spawn('Bat', {p: this, x: 200, y: 200  });
 
     this.mainText = g.H.mkFont(g, 6, 11);
